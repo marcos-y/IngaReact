@@ -1,0 +1,23 @@
+.footer{
+    background-color: black;
+    padding:50px;
+    display:flex;
+    justify-content: space-around;
+}
+
+.info{
+    color:white;
+    font-family: 'Roboto';
+    width:250px;
+}
+
+.forms{
+    color:white;
+    width:200px;
+ 
+}
+
+.mail{
+    color:white;
+    font-family: 'Roboto';
+}

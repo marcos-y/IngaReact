@@ -1,0 +1,16 @@
+.Sale{
+    background-color: salmon;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hrdiv{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding:100px;
+    align-items: center;
+}
+ 

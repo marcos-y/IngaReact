@@ -1,0 +1,42 @@
+.dropdown-toggle::after {
+    display:none;
+}
+
+.dropdown-toggle{
+    background-color: white;
+    color:black;
+    font-family: 'Roboto';
+    border-radius: 0px;
+    margin-right: 20px;
+    margin-left:20px;
+}
+
+.dropdown-toggle:active{
+    background-color: salmon;
+    color:black;
+}
+
+.dropdown-toggle:hover{
+    background-color: salmon;
+    color:black;
+}
+
+.dropdown-toggle:focus{
+    background-color: salmon;
+    color:black;
+}
+
+.item{
+    margin-right: 20px;
+    margin-left:20px;
+}
+
+.item:hover{
+    background-color: salmon;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+}
+

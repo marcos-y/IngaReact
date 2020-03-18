@@ -1,0 +1,64 @@
+.productos{
+    padding: 40px;
+    margin:auto;
+}
+
+.carddeck{
+    width: 1000px;
+    margin:auto;
+    padding:30px
+}
+
+.hrdiv{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding:100px;
+    align-items: center;
+    font-family: 'roboto';
+}
+
+hr{
+    background-color: gray;
+    width: 290px;
+}
+
+.card{
+    border-color: red;
+}
+
+.boton{
+    margin:auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    padding: 30px;
+}
+
+@media screen and (max-width: 400px) {
+
+    .productos{
+        padding: 20px;
+        margin:auto;
+    }
+
+    .hrdiv{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'roboto';
+    }
+
+    hr{
+        background-color:black;
+        width: 290px;
+    }
+
+    
+    .carddeck{
+    width: 380px;
+    margin:auto;
+    
+}
+  }

@@ -1,0 +1,16 @@
+.hrdiv{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding:100px;
+    align-items: center;
+    font-family: 'roboto';
+}
+
+.marcas{
+    display: flex;
+    justify-content: space-around;
+    width:1000px;
+    margin: auto;
+    padding:20px;
+}
