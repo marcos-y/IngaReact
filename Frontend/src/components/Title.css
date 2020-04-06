@@ -1,0 +1,11 @@
+.hrdiv{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin:auto;
+    align-items: center;
+    font-family: 'roboto';
+    width:100%;
+    max-width:1150px;
+    height:auto;                                        
+}

@@ -6,11 +6,16 @@
     flex-wrap: wrap;
 }
 
+.lobster{
+    font-family: 'Lobster', cursive;
+    color:white;
+}
+
 .hrdiv{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
-    padding:100px;
+    padding:50px;
     align-items: center;
 }
  

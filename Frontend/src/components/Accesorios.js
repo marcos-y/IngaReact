@@ -25,9 +25,6 @@ const Accesorios = () => {
                             additional content. This content is a little bit longer.
       </Card.Text>
                     </Card.Body>
-                    <Card.Footer>
-                        <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
                 </Card>
                 <Card>
                     <Card.Img variant="top" src={mochila} />
@@ -38,9 +35,6 @@ const Accesorios = () => {
         content.{' '}
                         </Card.Text>
                     </Card.Body>
-                    <Card.Footer>
-                        <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
                 </Card>
                 <Card>
                     <Card.Img variant="top" src={mochila} />
@@ -52,9 +46,6 @@ const Accesorios = () => {
                             show that equal height action.
       </Card.Text>
                     </Card.Body>
-                    <Card.Footer>
-                        <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
                 </Card>
             </CardDeck>
 

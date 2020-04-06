@@ -1,19 +1,24 @@
 import React from 'react';
-import './Sale.css';
 import Card from 'react-bootstrap/Card';
 import CardDeck from 'react-bootstrap/CardDeck';
-import mochila from './Mochila.png';
+import './Productos.css'
+import mochila from './Mochila.png'
+import Button from 'react-bootstrap/Button'
 
+const Productos = () => {
 
-const Sale = () => {
     return (
         <>
-            <div className="Sale">
-                <div className="hrdiv">
-                    <hr />
-                    <h1>Sale</h1>
-                    <hr />
-                </div>
+            <div className="productos">
+
+                <>
+                    <div className="hrdiv">
+                        <hr />
+                        <h1>Productos</h1>
+                        <hr />
+                    </div>
+                </>
+
                 <CardDeck className="carddeck">
                     <Card>
                         <Card.Img variant="top" src={mochila} />
@@ -24,9 +29,6 @@ const Sale = () => {
                                 additional content. This content is a little bit longer.
       </Card.Text>
                         </Card.Body>
-                        <Card.Footer>
-                            <small className="text-muted">Last updated 3 mins ago</small>
-                        </Card.Footer>
                     </Card>
                     <Card>
                         <Card.Img variant="top" src={mochila} />
@@ -37,9 +39,6 @@ const Sale = () => {
         content.{' '}
                             </Card.Text>
                         </Card.Body>
-                        <Card.Footer>
-                            <small className="text-muted">Last updated 3 mins ago</small>
-                        </Card.Footer>
                     </Card>
                     <Card>
                         <Card.Img variant="top" src={mochila} />
@@ -51,16 +50,15 @@ const Sale = () => {
                                 show that equal height action.
       </Card.Text>
                         </Card.Body>
-                        <Card.Footer>
-                            <small className="text-muted">Last updated 3 mins ago</small>
-                        </Card.Footer>
                     </Card>
                 </CardDeck>
 
+                <div className="boton">
+                    <Button variant="secondary">VER TODOS LOS PRODUCTOS</Button>
+                </div>
             </div>
-
         </>
     )
 }
 
-export default Sale;
+export default Productos;

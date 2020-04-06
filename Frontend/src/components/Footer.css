@@ -2,22 +2,38 @@
     background-color: black;
     padding:50px;
     display:flex;
+    flex-wrap:wrap;
     justify-content: space-around;
 }
 
 .info{
     color:white;
     font-family: 'Roboto';
-    width:250px;
+    padding:10px;
 }
 
 .forms{
     color:white;
-    width:200px;
- 
+    font-family:'Roboto';
+    min-width: 300px;
+    padding:10px;
+    
 }
 
 .mail{
     color:white;
     font-family: 'Roboto';
+    padding:15px;
+
+}
+
+.icons{
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:90px;
+}
+
+.icon{
+    max-width:100px;
+    height:auto;
 }

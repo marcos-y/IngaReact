@@ -1,0 +1,10 @@
+.Productos1{
+    max-width:1000px;
+    padding:50px;
+    margin:auto;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    
+}
+

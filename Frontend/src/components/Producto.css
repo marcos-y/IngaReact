@@ -1,0 +1,27 @@
+.card{
+    margin-bottom:20px;
+    padding:10px;
+    text-decoration:none !important; 
+}
+
+.card:hover{
+    background-color:salmon;
+    color:black;
+}
+
+.link{
+    text-decoration:none !important;
+    color:black;
+}
+
+.link:hover{
+    color:black;
+}
+
+.item:hover{
+    background-color: salmon;
+}
+
+.negrita{
+    font-weight: 300 !important;
+}
