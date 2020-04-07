@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react'; 
 import './Footer.css';
 import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
@@ -9,6 +9,13 @@ import icon3 from '../icons/whatsapp.png';
 import { withRouter } from 'react-router-dom';    
 
 const Footer = () => {
+
+    const [mensajes,setMensajes] = useState([]);
+    const [nombre,setNombre] = useState("");
+    const[mensaje,setMensaje] = useState("");
+    const [mail,setMail] = useState("");
+
+    
 
     return (
         <>

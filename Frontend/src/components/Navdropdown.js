@@ -28,29 +28,29 @@ const Navdropdown = () => {
               <NavDropdown.Item href="#action/3.5" className="item"><Link to="/Bolsos"className="link">Bolsos</Link></NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Marcas" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1" ><Link to="/" className="link">Aldei</Link></NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2" >Bagstage</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3" >Barbara</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4" >Chimola</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.5">Joup</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.6" >Lima</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.7" >Mango</NavDropdown.Item>
-               <NavDropdown.Item href="#action/3.8" >Myroslava</NavDropdown.Item>
-               <NavDropdown.Item href="#action/3.9" >Skora</NavDropdown.Item>
-               <NavDropdown.Item href="#action/3.9" >Squash</NavDropdown.Item>
-               <NavDropdown.Item href="#action/3.9" >Trendy</NavDropdown.Item>
-               <NavDropdown.Item href="#action/3.9" >Via Fina</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1" className="item"><Link to="/" className="link">Aldei</Link></NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2" className="item">Bagstage</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3" className="item">Barbara</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.4" className="item">Chimola</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.5" className="item">Joup</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.6" className="item">Lima</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.7" className="item">Mango</NavDropdown.Item>
+               <NavDropdown.Item href="#action/3.8" className="item">Myroslava</NavDropdown.Item>
+               <NavDropdown.Item href="#action/3.9" className="item">Skora</NavDropdown.Item>
+               <NavDropdown.Item href="#action/3.9" className="item">Squash</NavDropdown.Item>
+               <NavDropdown.Item href="#action/3.9" className="item">Trendy</NavDropdown.Item>
+               <NavDropdown.Item href="#action/3.9" className="item">Via Fina</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#home" className="item">Mayoristas</Nav.Link>
-            <Nav.Link href="#link" className="item">Giftshop</Nav.Link>
+            <Nav.Link href="#home" >Mayoristas</Nav.Link>
+            <Nav.Link href="#link" >Giftshop</Nav.Link>
             <NavDropdown title="Accesorios" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1" className="item"><Link to="/Cintos" className="link">Cintos</Link></NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2"className="item"><Link to="/Pañuelos" className="link">Pañuelos</Link></NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3"className="item"><Link to="/Billeteras"className="link">Billeteras</Link></NavDropdown.Item>
               <NavDropdown.Item href="#action/3.4"className="item"><Link to="/Paraguas" className="link">Paraguas</Link></NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#link" className="item">Sale!</Nav.Link>
-            <Nav.Link href="#link" className="item">Contacto</Nav.Link>
+            <Nav.Link href="#link" >Sale!</Nav.Link>
+            <Nav.Link href="#link" >Contacto</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

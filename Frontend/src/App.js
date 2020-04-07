@@ -30,15 +30,16 @@ import {
 import ProductoElegido from './components/ProductoElegido';
 
 function App() {
+
   return (
     <>
       <Router>
 
-        <Header></Header>
-
         <Switch>
 
           <Route path="/" exact>
+
+            <Header></Header>
 
             <Carousel1></Carousel1>
 
@@ -52,41 +53,97 @@ function App() {
 
             <Sale></Sale>
 
+
+            <Footer></Footer>
+
+
           </Route>
 
           <Route path="/Carteras" component={Carteras} >
+
+            <Header></Header>
+
+            <Carteras></Carteras>
+
+            <Footer></Footer>
 
           </Route>
 
           <Route path="/Bandoleras" component={Bandoleras} >
 
+            <Header></Header>
+
+            <Bandoleras></Bandoleras>
+
+            <Footer></Footer>
+
           </Route>
 
           <Route path="/Sobres" component={Sobres}>
+
+            <Header></Header>
+
+            <Sobres></Sobres>
+
+            <Footer></Footer>
 
           </Route>
 
           <Route path="/Mochilas" component={Mochilas}>
 
+            <Header></Header>
+
+            <Mochilas></Mochilas>
+
+            <Footer></Footer>
+
           </Route>
 
           <Route path="/Bolsos" component={Bolsos}>
 
+            <Header></Header>
+
+            <Bolsos></Bolsos>
+
+            <Footer></Footer>
+
           </Route>
 
           <Route path="/Paraguas" component={Paraguas}>
+            <Header></Header>
 
+            <Paraguas></Paraguas>
+
+            <Footer></Footer>
           </Route>
 
           <Route path="/Billeteras" component={Billeteras}>
 
+            <Header></Header>
+
+            <Billeteras></Billeteras>
+
+            <Footer></Footer>
           </Route>
 
           <Route path="/Cintos" component={Cintos}>
 
+            <Header></Header>
+
+            <Cintos></Cintos>
+
+            <Footer></Footer>
+
           </Route>
 
           <Route path="/Pañuelos" component={Pañuelos}>
+
+            <Header></Header>
+
+            <Pañuelos></Pañuelos>
+
+            <Footer></Footer>
+
 
           </Route>
 
@@ -95,8 +152,6 @@ function App() {
           </Route>
 
         </Switch>
-
-        <Footer></Footer>
 
       </Router>
     </>

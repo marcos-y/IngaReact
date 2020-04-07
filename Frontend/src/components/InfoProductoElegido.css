@@ -1,0 +1,62 @@
+.InfoProductoElegido{
+    display:flex;
+    flex-direction: column;
+    max-width:400px;
+    height:auto;
+    width:100%;
+}
+
+.h1{
+    color:gray;
+}
+
+h6{
+    display:inline;
+}
+
+hr{
+    width:100% !important;
+}
+
+.medioPago{
+    display: inline;
+    vertical-align: top;
+}
+
+.image{
+    height:40px;
+    width:40px;
+}
+
+.image2{
+    height:60px;
+    width:60px;
+}
+.button{
+    background-color:salmon;
+    color:white;
+    border-radius:10px;
+    border-color:salmon;
+}
+
+.button:hover{
+    background-color: salmon !important;
+    color:white;
+}
+
+.forms{
+    width:300px;
+}
+
+.form{
+    border-color:salmon;
+}
+
+.form:hover{
+    border-color:salmon !important;
+}
+
+.envio{
+    display: inline;
+    vertical-align: top;
+}
