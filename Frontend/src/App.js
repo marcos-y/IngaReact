@@ -53,7 +53,6 @@ function App() {
 
             <Sale></Sale>
 
-
             <Footer></Footer>
 
 

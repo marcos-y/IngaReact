@@ -1,14 +1,19 @@
 import React from 'react';
-import './Marcas.css'
+import './Marcas.css';
+import Title from './Title';
+import imgGift from './gifshopCortado.png';
+import Button from 'react-bootstrap/Button';
+import './Giftshop.css';
 
-const Giftshop = () =>{
+const Giftshop = () => {
 
-    return(
+    return (
         <>
-            <div className="hrdiv">
-                <hr />
-                <h1>Giftshop</h1>
-                <hr />
+            <Title nombre="Giftshop"></Title>
+            <div className="giftShop">
+                <img src={imgGift}></img>
+                <br></br>
+                <Button variant="secondary" id="boton">Regalar una giftcard</Button>
             </div>
         </>
     )

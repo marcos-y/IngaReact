@@ -4,15 +4,12 @@ import CardDeck from 'react-bootstrap/CardDeck';
 import Button from 'react-bootstrap/Button'
 import mochila from './Mochila.png'
 import './Marcas.css';
+import Title from './Title';
 
 const Accesorios = () => {
     return (
         <>
-            <div className="hrdiv">
-                <hr />
-                <h1>Accesorios</h1>
-                <hr />
-            </div>
+            <Title nombre="Accesorios"></Title>
 
 
             <CardDeck className="carddeck">

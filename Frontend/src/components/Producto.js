@@ -17,12 +17,15 @@ const Producto = (props) => {
                 <Card.Body>
                     <Card.Title>{props.nombre}</Card.Title>
                     <Card.Text>
+                        <div className="tachado">
+                        {props.precioDescuento}
+                        </div>
                         {props.descuento}
                         <br></br>
                         <br></br>
-                        <div className="negrita">
+                        <h6>
                         {props.precio}
-                        </div>
+                        </h6>
                         <br></br>
                         {props.cuotas}
                     </Card.Text>

@@ -13,16 +13,14 @@ import marca10 from '../marcas/skora.png';
 import marca11 from '../marcas/trendy.png';
 import marca12 from '../marcas/via-fina.png';
 import './Marcas.css'
+import Title from './Title';
 
 
 const Marcas = () => {
     return (
     <>
-     <div className="hrdiv">
-                <hr />
-                <h1>Marcas</h1>
-                <hr />
-            </div>
+     
+        <Title nombre="Marcas"></Title>
 
 
         <div className="marcas">

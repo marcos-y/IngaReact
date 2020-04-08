@@ -1,0 +1,15 @@
+.giftShop{
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    max-width:1000px;
+    width:100%;
+    height:auto;
+}
+
+#boton{
+    width:300px;
+    margin:auto;
+    height:40px;
+    border-radius:10px;
+}

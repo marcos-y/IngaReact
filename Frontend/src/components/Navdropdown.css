@@ -25,6 +25,10 @@
     color:black;
 }
 
+.dropdown-item.active{
+    background-color:white;
+}
+
 .nav-link{
     margin-left:20px;
     margin-right:20px;
@@ -32,6 +36,10 @@
 
 .item:hover{
     background-color: salmon;
+}
+
+.item:focus{
+    background-color: none !important;
 }
 
 .nav{

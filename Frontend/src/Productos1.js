@@ -9,7 +9,7 @@ const Productos1 = () => {
     return (
         <>
         <div className="Productos1">
-            <Producto nombre="cartera" descuento="$2000 40% OFF" precio="$3000" cuotas="Hasta 12 cuotas" imagen={img}></Producto>
+            <Producto nombre="cartera" precioDescuento="$2000" descuento={"40% OFF"} precio="$3000" cuotas="Hasta 12 cuotas" imagen={img}></Producto>
             <Producto nombre="cartera" descripcion="cartera negra" imagen={img}></Producto>
             <Producto nombre="cartera" descripcion="cartera negra" imagen={img}></Producto>
         </div>
