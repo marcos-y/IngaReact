@@ -60,3 +60,16 @@ hr{
     display: inline;
     vertical-align: top;
 }
+
+.boton2{
+    background-color:salmon;
+    color:white;
+    border-radius:10px;
+    border-color:salmon;
+    width:460px;
+}
+
+.boton2:hover{
+    background-color: salmon !important;
+    color:white;
+}

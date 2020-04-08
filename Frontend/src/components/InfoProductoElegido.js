@@ -66,16 +66,14 @@ const InfoProductoElegido = ({compras}) => {
                 <Modal.Body>
                     
                     <ProductoModal></ProductoModal>
+                    <ProductoModal></ProductoModal>
                     
                 </Modal.Body>
 
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
-                        Cerrar
-          </Button>
-                    <Button variant="primary" onClick={handleClose}>
-                        comprar
-          </Button>
+                    <Button variant="light" onClick={handleClose} className="boton2">
+                        COMPRAR
+                    </Button>
                 </Modal.Footer>
             </Modal>
         </>
