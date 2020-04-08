@@ -15,7 +15,15 @@ const Footer = () => {
     const[mensaje,setMensaje] = useState("");
     const [mail,setMail] = useState("");
 
-    
+    const handleChangeNombre = event => setNombre(event.target.value);
+    const handleChangeMensaje = event => setMensaje(event.target.value);
+    const handleChangeMail = event => setMail(event.target.value)
+
+    const handleSubmit = () => {
+        const mensajeItem = {nombre,mail,mensaje};
+        setMensajes ([...mensajes,mensajeItem]);
+        console.log(mensajes);
+    }
 
     return (
         <>
@@ -33,14 +41,12 @@ const Footer = () => {
                 <div className="forms">
                     <label htmlFor="basic-url">Nombre</label>
                     <InputGroup>
-
-                        <FormControl id="basic-url" aria-describedby="basic-addon3" />
+                        <FormControl id="basic-url" aria-describedby="basic-addon3" onChange={handleChangeNombre} value={nombre} />
                     </InputGroup>
 
                     <label htmlFor="basic-url">En que podemos ayudarte?</label>
                     <InputGroup >
-
-                        <FormControl id="basic-url" aria-describedby="basic-addon3" />
+                        <FormControl id="basic-url" aria-describedby="basic-addon3" onChange={handleChangeMensaje}/>
                     </InputGroup>
                 </div>
 
@@ -50,11 +56,10 @@ const Footer = () => {
 
                     <label htmlFor="basic-url">Email</label>
                     <InputGroup className="mb-3">
-
-                        <FormControl id="basic-url" aria-describedby="basic-addon3" />
+                        <FormControl id="basic-url" aria-describedby="basic-addon3" onChange={handleChangeMail} />
                     </InputGroup>
 
-                    <Button variant="light">Enviar</Button>
+                    <Button variant="light" onClick={handleSubmit}>Enviar</Button>
 
                     <div className="icons">
                         <img src={icon1} className="icon"></img>

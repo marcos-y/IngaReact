@@ -4,8 +4,9 @@ import Button from 'react-bootstrap/Button';
 import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
 import Modal from 'react-bootstrap/Modal';
+import ProductoModal from './ProductoModal';
 
-const InfoProductoElegido = () => {
+const InfoProductoElegido = ({compras}) => {
 
     const [show, setShow] = useState(false);
 
@@ -61,7 +62,13 @@ const InfoProductoElegido = () => {
                 <Modal.Header closeButton>
                     <Modal.Title>Producto / Subtotal</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>ITEM</Modal.Body>
+
+                <Modal.Body>
+                    
+                    <ProductoModal></ProductoModal>
+                    
+                </Modal.Body>
+
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
                         Cerrar

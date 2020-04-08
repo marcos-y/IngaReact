@@ -15,6 +15,7 @@ const ProductoElegido = () => {
                  
                  <InfoProductoElegido></InfoProductoElegido>
             
+
             </div>
         </>
     )

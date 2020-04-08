@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Carousel1 from './components/Carousel1';
@@ -30,6 +30,13 @@ import {
 import ProductoElegido from './components/ProductoElegido';
 
 function App() {
+
+  const [compras,setCompras] = useState([]);
+  
+  const handleAddCompra = (compra)  =>{
+    console.log(compra);
+    setCompras([...compras,compra]);
+  } 
 
   return (
     <>
@@ -127,7 +134,7 @@ function App() {
 
           <Route path="/Cintos" component={Cintos}>
 
-            <Header></Header>
+            <Header ></Header>
 
             <Cintos></Cintos>
 
@@ -146,7 +153,7 @@ function App() {
 
           </Route>
 
-          <Route path="/ProductoElegido" component={ProductoElegido}>
+          <Route path="/ProductoElegido" component={ProductoElegido} compras={compras} onAddCompra={handleAddCompra}>
 
           </Route>
 
