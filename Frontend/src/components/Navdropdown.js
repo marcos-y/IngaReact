@@ -28,7 +28,7 @@ const Navdropdown = () => {
               <NavDropdown.Item  className="item"><Link to="/Bolsos"className="link">Bolsos</Link></NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Marcas" id="basic-nav-dropdown">
-              <NavDropdown.Item className="item"><Link to="/" className="link">Aldei</Link></NavDropdown.Item>
+              <NavDropdown.Item className="item"><Link to="/marcas" className="link">Aldei</Link></NavDropdown.Item>
               <NavDropdown.Item  className="item">Bagstage</NavDropdown.Item>
               <NavDropdown.Item  className="item">Barbara</NavDropdown.Item>
               <NavDropdown.Item  className="item">Chimola</NavDropdown.Item>
@@ -42,15 +42,15 @@ const Navdropdown = () => {
                <NavDropdown.Item  className="item">Via Fina</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#home" >Mayoristas</Nav.Link>
-            <Nav.Link href="#link" >Giftshop</Nav.Link>
+            <Nav.Link href="#giftshop" >Giftshop</Nav.Link>
             <NavDropdown title="Accesorios" id="basic-nav-dropdown">
               <NavDropdown.Item  className="item"><Link to="/Cintos" className="link">Cintos</Link></NavDropdown.Item>
               <NavDropdown.Item className="item"><Link to="/Pañuelos" className="link">Pañuelos</Link></NavDropdown.Item>
               <NavDropdown.Item className="item"><Link to="/Billeteras"className="link">Billeteras</Link></NavDropdown.Item>
               <NavDropdown.Item className="item"><Link to="/Paraguas" className="link">Paraguas</Link></NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#link" >Sale!</Nav.Link>
-            <Nav.Link href="#link" >Contacto</Nav.Link>
+            <Nav.Link href="#sale" >Sale!</Nav.Link>
+            <Nav.Link href="#contacto" >Contacto</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

@@ -10,7 +10,7 @@ const Giftshop = () => {
     return (
         <>
             <Title nombre="Giftshop"></Title>
-            <div className="giftShop">
+            <div className="giftShop" id="giftshop">
                 <img src={imgGift}></img>
                 <br></br>
                 <Button variant="secondary" id="boton">Regalar una giftcard</Button>

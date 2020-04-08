@@ -8,7 +8,7 @@ import mochila from './Mochila.png';
 const Sale = () => {
     return (
         <>
-            <div className="Sale">
+            <div className="Sale" id="sale">
                 <div className="hrdiv">
                     <hr />
                     <h1 className="lobster">Sale</h1>

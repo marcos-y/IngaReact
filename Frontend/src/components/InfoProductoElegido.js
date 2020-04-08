@@ -67,7 +67,7 @@ const InfoProductoElegido = ({compras}) => {
                     
                     <ProductoModal></ProductoModal>
                     <ProductoModal></ProductoModal>
-                    
+                    <h6>Subtotal (sin envio):$2000</h6>
                 </Modal.Body>
 
                 <Modal.Footer>

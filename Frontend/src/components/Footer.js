@@ -27,7 +27,7 @@ const Footer = () => {
 
     return (
         <>
-            <div className="footer">
+            <div className="footer" id="contacto">
 
                 <div className="info2">
                     <h5>Tel...</h5>

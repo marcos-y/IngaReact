@@ -28,15 +28,16 @@ import {
 } from "react-router-dom";
 
 import ProductoElegido from './components/ProductoElegido';
+import marcasProd from './marcas/marcasProd';
 
 function App() {
 
-  const [compras,setCompras] = useState([]);
-  
-  const handleAddCompra = (compra)  =>{
+  const [compras, setCompras] = useState([]);
+
+  const handleAddCompra = (compra) => {
     console.log(compra);
-    setCompras([...compras,compra]);
-  } 
+    setCompras([...compras, compra]);
+  }
 
   return (
     <>
@@ -116,11 +117,13 @@ function App() {
           </Route>
 
           <Route path="/Paraguas" component={Paraguas}>
+            
             <Header></Header>
 
             <Paraguas></Paraguas>
 
             <Footer></Footer>
+
           </Route>
 
           <Route path="/Billeteras" component={Billeteras}>
@@ -130,6 +133,7 @@ function App() {
             <Billeteras></Billeteras>
 
             <Footer></Footer>
+
           </Route>
 
           <Route path="/Cintos" component={Cintos}>
@@ -150,6 +154,15 @@ function App() {
 
             <Footer></Footer>
 
+          </Route>
+
+          <Route path="/marcas" component={marcasProd}>
+
+            <Header></Header>
+
+            <marcasProd></marcasProd>
+
+            <Footer></Footer>
 
           </Route>
 
