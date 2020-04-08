@@ -33,7 +33,7 @@ const ProductoModal = () => {
 
                 <div className="borrar">
                     <h6>$2000</h6>
-                    <img src="https://cdn.icon-icons.com/icons2/1919/PNG/512/biggarbagebin_121980.png" className="icon"></img>
+                    <img src="https://cdn.icon-icons.com/icons2/1919/PNG/512/biggarbagebin_121980.png" className="icon2"></img>
                 </div>
 
             </div>
