@@ -166,7 +166,7 @@ function App() {
 
           </Route>
 
-          <Route path="/ProductoElegido" component={ProductoElegido} compras={compras} onAddCompra={handleAddCompra}>
+          <Route path="/ProductoElegido/:nombre" component={ProductoElegido}>
 
           </Route>
 

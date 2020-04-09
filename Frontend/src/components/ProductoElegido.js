@@ -2,10 +2,13 @@ import React from 'react';
 import Carousel2 from './Carousel2';
 import './ProductoElegido.css';
 import InfoProductoElegido from './InfoProductoElegido';
-
-
+import {
+    useParams,
+  } from "react-router-dom";
 
 const ProductoElegido = () => {
+
+    const {nombre} = useParams();
 
     return (
         <>
@@ -13,8 +16,7 @@ const ProductoElegido = () => {
                  
                  <Carousel2></Carousel2>
                  
-                 <InfoProductoElegido></InfoProductoElegido>
-            
+                 <InfoProductoElegido name={nombre} ></InfoProductoElegido>
 
             </div>
         </>

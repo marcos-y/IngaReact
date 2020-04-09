@@ -6,7 +6,7 @@ import FormControl from 'react-bootstrap/FormControl';
 import Modal from 'react-bootstrap/Modal';
 import ProductoModal from './ProductoModal';
 
-const InfoProductoElegido = ({compras}) => {
+const InfoProductoElegido = (props) => {
 
     const [show, setShow] = useState(false);
 
@@ -17,7 +17,7 @@ const InfoProductoElegido = ({compras}) => {
         <>
             <div className="InfoProductoElegido">
 
-                <h1 className="h1">Mochila</h1>
+                <h1 className="h1">{props.name}</h1>
                 <h3>1000</h3>
 
                 <div className="medioPago">
@@ -64,7 +64,7 @@ const InfoProductoElegido = ({compras}) => {
                 </Modal.Header>
 
                 <Modal.Body>
-                    
+
                     <ProductoModal></ProductoModal>
                     <ProductoModal></ProductoModal>
                     <h6>Subtotal (sin envio):$2000</h6>

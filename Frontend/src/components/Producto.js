@@ -2,6 +2,7 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import './Producto.css';
 import ProductoElegido from './ProductoElegido';
+
 import {
     Link,
   } from "react-router-dom";
@@ -11,7 +12,7 @@ const Producto = (props) => {
     return (
         <>
 
-        <Link to="/ProductoElegido" className="link">
+        <Link to={`ProductoElegido/${props.nombre}`} className="link">
             <Card style={{ width: '18rem' }} className="card">
                 <Card.Img variant="top" src={props.imagen} />
                 <Card.Body>
@@ -32,7 +33,7 @@ const Producto = (props) => {
                 </Card.Body>
             </Card>
         </Link>
-
+        
         </>
     )
 }

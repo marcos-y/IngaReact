@@ -4,14 +4,14 @@ import './components/Producto.css';
 import './Productos1.css';
 import img from './components/Mochila.png';
 
-const Productos1 = () => {
+const Productos1 = (props) => {
 
     return (
         <>
         <div className="Productos1">
-            <Producto nombre="cartera" precioDescuento="$2000" descuento={"40% OFF"} precio="$3000" cuotas="Hasta 12 cuotas" imagen={img}></Producto>
-            <Producto nombre="cartera" descripcion="cartera negra" imagen={img}></Producto>
-            <Producto nombre="cartera" descripcion="cartera negra" imagen={img}></Producto>
+            <Producto nombre={props.nombre1} precioDescuento={props.precioDescuento1} descuento={props.descuento1} precio={props.precio1} cuotas={props.cuotas1} imagen={props.imagen1}></Producto>
+            <Producto nombre={props.nombre2} precioDescuento={props.precioDescuento2} descuento={props.descuento2}  precio={props.precio2}  cuotas={props.cuotas2}  imagen={props.imagen2}></Producto>
+            <Producto nombre={props.nombre3} precioDescuento={props.precioDescuento3} descuento={props.descuento3}  precio={props.precio3}  cuotas={props.cuotas3}  imagen={props.imagen3}></Producto>
         </div>
         </>
     )

@@ -29,3 +29,7 @@
 .tachado{
     text-decoration:line-through;
 }
+
+.oculto{
+    display:none;
+}
