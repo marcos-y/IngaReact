@@ -166,7 +166,7 @@ function App() {
 
           </Route>
 
-          <Route path="/ProductoElegido/:nombre" component={ProductoElegido}>
+          <Route path="/ProductoElegido/:nombre/precio/:precio" component={ProductoElegido}>
 
           </Route>
 

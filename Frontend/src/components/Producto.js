@@ -12,7 +12,7 @@ const Producto = (props) => {
     return (
         <>
 
-        <Link to={`ProductoElegido/${props.nombre}`} className="link">
+        <Link to={`ProductoElegido/${props.nombre}/precio/${props.precio}`} className="link">
             <Card style={{ width: '18rem' }} className="card">
                 <Card.Img variant="top" src={props.imagen} />
                 <Card.Body>

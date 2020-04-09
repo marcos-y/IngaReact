@@ -8,7 +8,7 @@ import {
 
 const ProductoElegido = () => {
 
-    const {nombre} = useParams();
+    const {nombre,precio} = useParams();
 
     return (
         <>
@@ -16,7 +16,7 @@ const ProductoElegido = () => {
                  
                  <Carousel2></Carousel2>
                  
-                 <InfoProductoElegido name={nombre} ></InfoProductoElegido>
+                 <InfoProductoElegido name={nombre} precio={precio}></InfoProductoElegido>
 
             </div>
         </>

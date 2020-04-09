@@ -18,7 +18,7 @@ const InfoProductoElegido = (props) => {
             <div className="InfoProductoElegido">
 
                 <h1 className="h1">{props.name}</h1>
-                <h3>1000</h3>
+                <h3>{props.precio}</h3>
 
                 <div className="medioPago">
                     <img src="https://cdn.icon-icons.com/icons2/38/PNG/512/creditcard_payment_4578.png" className="image"></img>
@@ -64,8 +64,7 @@ const InfoProductoElegido = (props) => {
                 </Modal.Header>
 
                 <Modal.Body>
-
-                    <ProductoModal></ProductoModal>
+                    <ProductoModal nombre={props.name} precio={props.precio}></ProductoModal>
                     <ProductoModal></ProductoModal>
                     <h6>Subtotal (sin envio):$2000</h6>
                 </Modal.Body>
