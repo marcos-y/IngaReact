@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react'; 
 import './ProductoModal.css';
 import imagen from './Mochila.png';
+import bin from '../icons/bin.png';
 import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
@@ -33,7 +34,7 @@ const ProductoModal = (props) => {
 
                 <div className="borrar">
                     <h6>{props.precio}</h6>
-                    <img src="https://cdn.icon-icons.com/icons2/1919/PNG/512/biggarbagebin_121980.png" className="icon2"></img>
+                    <img src={bin} className="icon2"></img>
                 </div>
 
             </div>

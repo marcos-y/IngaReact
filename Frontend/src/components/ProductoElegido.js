@@ -6,7 +6,7 @@ import {
     useParams,
   } from "react-router-dom";
 
-const ProductoElegido = () => {
+const ProductoElegido = (props) => {
 
     const {nombre,precio} = useParams();
 
@@ -16,7 +16,7 @@ const ProductoElegido = () => {
                  
                  <Carousel2></Carousel2>
                  
-                 <InfoProductoElegido name={nombre} precio={precio}></InfoProductoElegido>
+                 <InfoProductoElegido name={nombre} precio={precio} productos={props.productos} onAddProd={props.onAddProd}></InfoProductoElegido>
 
             </div>
         </>

@@ -32,11 +32,12 @@ import marcasProd from './marcas/marcasProd';
 
 function App() {
 
-  const [compras, setCompras] = useState([]);
 
-  const handleAddCompra = (compra) => {
-    console.log(compra);
-    setCompras([...compras, compra]);
+  const [productos, setProductos] = useState([])
+
+  const handleAddProd = (producto) => {
+    console.log(producto);
+    setProductos([...productos, producto])
   }
 
   return (
@@ -117,7 +118,7 @@ function App() {
           </Route>
 
           <Route path="/Paraguas" component={Paraguas}>
-            
+
             <Header></Header>
 
             <Paraguas></Paraguas>
@@ -166,7 +167,9 @@ function App() {
 
           </Route>
 
-          <Route path="/ProductoElegido/:nombre/precio/:precio" component={ProductoElegido}>
+          <Route path="/ProductoElegido/:nombre/precio/:precio">
+
+            <ProductoElegido productos={productos} onAddProd={handleAddProd}></ProductoElegido>
 
           </Route>
 
