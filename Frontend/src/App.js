@@ -33,11 +33,12 @@ import marcasProd from './marcas/marcasProd';
 function App() {
 
 
-  const [productos, setProductos] = useState([])
+  const [productos, setProductos] = useState([]);
 
   const handleAddProd = (producto) => {
-    console.log(producto);
+    
     setProductos([...productos, producto])
+    console.log(productos);
   }
 
   return (

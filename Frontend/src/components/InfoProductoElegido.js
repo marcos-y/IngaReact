@@ -11,23 +11,22 @@ import ico2 from '../icons/truck.png';
 
 const InfoProductoElegido = (props) => {
 
-    const [productos, setProductos] = useState([]);
-    const [producto, setProducto] = useState("");
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
+
+
 
     const handleSubmit = event => {
         
         setShow(true);
-        setProducto(props.name);
-        setProductos([...productos,producto]);
-
+       
         /* AGREGO AL ARRAY GLOBAL*/
         const name = props.name;
         const price = props.precio;
         const prods = {name,price}
         props.onAddProd(prods)
         console.log(props.productos);
+        
     }
 
 
@@ -83,7 +82,7 @@ const InfoProductoElegido = (props) => {
 
                 <Modal.Body>{
                     props.productos.map((produ,i) => {
-                        return <ProductoModal key={i} nombre={props.name} precio={props.precio}></ProductoModal>
+                        return <ProductoModal key={i} nombre={props.productos[i].name} precio={props.productos[i].price}></ProductoModal>
                     })
                 }
                     <h6>Subtotal (sin envio):$2000</h6>
