@@ -29,11 +29,13 @@
     display: flex;
     width:60px;
     flex-direction: column;
+    
 }
 
 .icon2{
     height:20px;
     width:20px;
+    cursor: pointer; 
 }
 
 .boton3{
@@ -45,3 +47,4 @@
 .botonComprar{
     width:100px
 }
+

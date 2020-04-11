@@ -13,20 +13,32 @@ const InfoProductoElegido = (props) => {
 
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
+    const [total, setTotal] = useState(parseInt(props.precio));
+    const [cant,setCant] = useState(0);
 
+    const handleAddCant = (cantidad) => {
+        setCant(cantidad);
+        console.log(cant);
+    }
 
+    const handlRestarCant = (cantidad) =>{
+        setCant(cantidad);
+        console.log(cant);
+    }
 
     const handleSubmit = event => {
-        
+
         setShow(true);
-       
+
         /* AGREGO AL ARRAY GLOBAL*/
         const name = props.name;
         const price = props.precio;
-        const prods = {name,price}
+        const cantidad = cant;
+        setTotal(parseInt(total) + parseInt(price));
+        const prods = { name, price, total, cantidad }
         props.onAddProd(prods)
         console.log(props.productos);
-        
+
     }
 
 
@@ -35,7 +47,7 @@ const InfoProductoElegido = (props) => {
             <div className="InfoProductoElegido">
 
                 <h1 className="h1">{props.name}</h1>
-                <h3>{props.precio}</h3>
+                <h3>${props.precio}</h3>
 
                 <div className="medioPago">
                     <img src={ico1} className="image"></img>
@@ -81,11 +93,13 @@ const InfoProductoElegido = (props) => {
                 </Modal.Header>
 
                 <Modal.Body>{
-                    props.productos.map((produ,i) => {
-                        return <ProductoModal key={i} nombre={props.productos[i].name} precio={props.productos[i].price}></ProductoModal>
+                    props.productos.map((produ, i) => {
+                        return <><ProductoModal key={i} nombre={props.productos[i].name} 
+                        precio={props.productos[i].price} onAddCant={handleAddCant} onRestarCant={handlRestarCant}></ProductoModal>
+                            <h6>Subtotal (sin envio): ${props.productos[i].total * cant}</h6></>
                     })
                 }
-                    <h6>Subtotal (sin envio):$2000</h6>
+
                 </Modal.Body>
 
                 <Modal.Footer>

@@ -8,6 +8,22 @@ import Button from 'react-bootstrap/Button';
 
 const ProductoModal = (props) => {
 
+    const [cont,setCont] = useState(0);
+
+    const handleClickSuma = () =>{
+        setCont(parseInt(cont)+1);
+        props.onAddCant(cont);
+        
+    }
+
+    const handleClickResta = () =>{
+        if (cont>=1){
+            setCont(parseInt(cont)-1);
+            props.onRestarCant(cont);
+        }
+        
+    }
+
     return (
         <>
             <div className="ProductoModal">
@@ -15,17 +31,17 @@ const ProductoModal = (props) => {
 
                 <div className="info">
                     <h6>{props.nombre}</h6>
-                    <h6>{props.precio}</h6>
+                    <h6>${props.precio}</h6>
 
                     <div className="botonComprar">
                         <InputGroup>
                             <InputGroup.Prepend>
-                                <Button variant="light" className="boton3">+</Button>
+                                <Button variant="light" className="boton3" onClick={handleClickSuma}>+</Button>
                             </InputGroup.Prepend>
-                            <FormControl aria-describedby="basic-addon1" placeholder="1"
+                            <FormControl aria-describedby="basic-addon1" placeholder={cont}
                                 aria-label="Recipient's username" />
                             <InputGroup.Prepend>
-                                <Button variant="light" className="boton3">-</Button>
+                                <Button variant="light" className="boton3" onClick={handleClickResta}>-</Button>
                             </InputGroup.Prepend>
                         </InputGroup>
                     </div>
@@ -33,7 +49,7 @@ const ProductoModal = (props) => {
                 </div>
 
                 <div className="borrar">
-                    <h6>{props.precio}</h6>
+                    <h6>${props.precio}</h6>
                     <img src={bin} className="icon2"></img>
                 </div>
 

@@ -25,7 +25,7 @@ const Producto = (props) => {
                         <br></br>
                         <br></br>
                         <h6>
-                        {props.precio}
+                        ${props.precio}
                         </h6>
                         <br></br>
                         {props.cuotas}
